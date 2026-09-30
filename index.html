@@ -1,5 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="fr" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos Eisley Cantina · Le plus grand bar de Tatooine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+      </script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <!DOCTYPE html>
+<html lang="fr" class="dark" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,35 +23,233 @@
   </head>
   <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
     <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10">
-      <nav aria-label="Principal" class="sticky top-0 bg-slate-950/80 backdrop-blur-md border-b border-white/10 mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-        <!-- Logo à gauche -->
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 grid size-8 place-items-center rounded-lg bg-gradient-to-br from-violet-500 to-amber-500 flex items-center justify-center">
-            🎵
+      <nav aria-label="Principal" class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/10 shadow-md shadow-black/20">
+        <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+          <!-- Logo à gauche -->
+          <div class="flex items-center gap-3">
+            <div class="size-10 grid place-items-center rounded-lg bg-gradient-to-br from-violet-500 to-amber-500">
+              🎵
+            </div>
+            <span class="font-bold text-lg">Mos Eisley Cantina</span>
           </div>
-          <span class="font-bold text-lg">Mos Eisley Cantina</span>
+      
+          <!-- Navigation (cachée sur mobile) -->
+          <div class="hidden md:flex gap-8">
+            <a href="#features" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Caractéristiques
+            </a>
+            <a href="#menu" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Menu
+            </a>
+            <a href="#music" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Musique en direct
+            </a>
+            <a href="#signin" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Connexion
+            </a>
+          </div>
+      
+          <!-- Bouton CTA à droite -->
+          <button class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-2 rounded-lg font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+            Réserver une loge
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- class="bg-gradient-to-br from-slate-950 via-violet-950/40 to-amber-950/30" -->
+    <main class="bg-gradient-to-br from-violet-500 to-amber-500">
+
+      <!-- HERO -->
+      <section class="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Colonne gauche : texte -->
+        <div>
+          <div class="inline-block bg-violet-500/10 border border-violet-400/30 rounded-full px-4 py-1 text-sm mb-8">
+            🌙 Ouvert chaque nuit, 3 ABY
+          </div>
+
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            Trouvez votre repaire sur
+            <span class="bg-gradient-to-r from-violet-400 to-amber-400 bg-clip-text text-transparent">Tatooine</span>
+          </h1>
+
+          <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+            Mos Eisley Cantina : le bar le plus chaud du désert. Musique en direct jusqu'à l'aube,
+            cabines réservées discrètes, et une ambiance qui vaut le détour depuis la Bordure Extérieure.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <button class="bg-violet-600 hover:bg-violet-700 text-white px-8 py-3 rounded-lg font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Réserver maintenant
+            </button>
+            <button class="border border-violet-400/50 text-violet-300 hover:bg-violet-500/10 px-8 py-3 rounded-lg font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Voir le menu
+            </button>
+          </div>
         </div>
 
-        <!-- Navigation (cachée sur mobile) -->
-        <div class="hidden md:flex gap-8">
-          <a href="#features" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            Caractéristiques
-          </a>
-          <a href="#menu" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            Menu
-          </a>
-          <a href="#music" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            Musique en direct
-          </a>
-          <a href="#signin" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-            Connexion
-          </a>
-        </div>
+        <!-- Colonne droite : image -->
+        <figure class="rounded-xl overflow-hidden ring-1 ring-white/10">
+          <img
+            src="https://product-builder-fullstack.s3.eu-west-3.amazonaws.com/M02_Web-Foundation/unsplash-cantina.jpeg"
+            alt="Intérieur de Mos Eisley Cantina, bar sombre et fumeux"
+            class="w-full h-auto object-cover"
+          />
+          <figcaption class="bg-slate-900/80 px-4 py-3 text-xs text-slate-400">
+            Ambiance authentique d'une cantina de Tatooine
+          </figcaption>
+        </figure>
+      </section>
 
-        <!-- Bouton CTA à droite -->
-        <button class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-2 rounded-lg font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
-          Réserver une loge
-        </button>
+      <!-- FEATURES : à sélectionner puis Ctrl+K dans Cursor -->
+      <section id="features" aria-labelledby="features-title" class="mx-auto max-w-6xl px-6 py-20">
+        <h2 id="features-title" class="text-3xl font-bold mb-12">Pourquoi choisir Mos Eisley ?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article
+            tabindex="0"
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-8 hover:-translate-y-1 transition focus-visible:ring-2 focus-visible:ring-violet-400"
+          >
+            <div class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 flex items-center justify-center text-2xl">
+              🎵
+            </div>
+            <h3 class="font-bold mt-6 mb-3">Musique en direct</h3>
+            <p class="text-slate-300">
+              Musique en direct chaque nuit. Du coucher au lever du soleil, assez fort pour couvrir un chasseur de primes.
+            </p>
+          </article>
+          <article
+            tabindex="0"
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-8 hover:-translate-y-1 transition focus-visible:ring-2 focus-visible:ring-violet-400"
+          >
+            <div class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 flex items-center justify-center text-2xl">
+              🔫
+            </div>
+            <h3 class="font-bold mt-6 mb-3">Contrebandiers bienvenue</h3>
+            <p class="text-slate-300">
+              Les contrebandiers bienvenue. Pas de questions. Cabines au fond, aucune trace.
+            </p>
+          </article>
+          <article
+            tabindex="0"
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-8 hover:-translate-y-1 transition focus-visible:ring-2 focus-visible:ring-violet-400"
+          >
+            <div class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 flex items-center justify-center text-2xl">
+              🤖
+            </div>
+            <h3 class="font-bold mt-6 mb-3">Droits des droïdes</h3>
+            <p class="text-slate-300">
+              Droits des droïdes : voir règlement. Limites au sol. Mise en veille recommandée.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="pricing" aria-labelledby="pricing-title" class="mx-auto max-w-6xl px-6 py-20">
+        <h2 id="pricing-title" class="text-3xl font-bold mb-12 text-center">Choisissez votre expérience</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <!-- 💰 Carte 1 : Outer Rim (Standard) -->
+          <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-8 hover:-translate-y-1 transition focus-visible:ring-2 focus-visible:ring-violet-400">
+            <h3 class="text-xl font-bold mb-2">Bordure Extérieure</h3>
+            <p class="text-sm text-slate-400 mb-6">Clients occasionnels</p>
+            
+            <div class="mb-8">
+              <span class="text-4xl font-bold">0</span>
+              <span class="text-slate-400"> crédits</span>
+            </div>
+      
+            <ul class="space-y-3 mb-8 text-sm text-slate-300">
+              <li>✓ Accès libre (bar stool)</li>
+              <li>✓ Lait bleu de la maison</li>
+              <li>✓ Pas de réservation</li>
+            </ul>
+      
+            <button class="w-full border border-slate-400 text-slate-300 hover:bg-slate-400/10 px-4 py-3 rounded-lg font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+              Venir maintenant
+            </button>
+          </article>
+      
+          <!-- ⭐ Carte 2 : Mid Rim (Recommended - EN AVANT PLAN) -->
+          <article class="bg-white/[0.03] border-2 border-violet-500 backdrop-blur rounded-xl p-8 hover:-translate-y-1 transition focus-visible:ring-2 focus-visible:ring-violet-400 ring-2 ring-violet-500">
+            <!-- Badge Recommended -->
+            <div class="inline-block bg-violet-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+              ⭐ Recommandé
+            </div>
+      
+            <h3 class="text-xl font-bold mb-2">Mid Rim</h3>
+            <p class="text-sm text-slate-400 mb-6">La plupart des clients</p>
+            
+            <div class="mb-8">
+              <span class="text-4xl font-bold">25</span>
+              <span class="text-slate-400"> crédits</span>
+            </div>
+      
+            <ul class="space-y-3 mb-8 text-sm text-slate-300">
+              <li>✓ Loge réservée</li>
+              <li>✓ Musique en direct</li>
+              <li>✓ Cabine discrète pour contrebandiers</li>
+            </ul>
+      
+            <button class="w-full bg-violet-600 hover:bg-violet-700 text-white px-4 py-3 rounded-lg font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+              Choisir Mid Rim
+            </button>
+          </article>
+      
+          <!-- 👑 Carte 3 : Core Worlds (Premium) -->
+          <article class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-8 hover:-translate-y-1 transition focus-visible:ring-2 focus-visible:ring-violet-400">
+            <h3 class="text-xl font-bold mb-2">Mondes du Noyau</h3>
+            <p class="text-sm text-slate-400 mb-6">Clients VIP</p>
+            
+            <div class="mb-8">
+              <span class="text-4xl font-bold">120</span>
+              <span class="text-slate-400"> crédits</span>
+            </div>
+      
+            <ul class="space-y-3 mb-8 text-sm text-slate-300">
+              <li>✓ Table privée VIP</li>
+              <li>✓ Service Jedi-grade</li>
+              <li>✓ Droïde garde du corps inclus</li>
+            </ul>
+      
+            <button class="w-full border border-amber-400 text-amber-300 hover:bg-amber-400/10 px-4 py-3 rounded-lg font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-400">
+              Devenir VIP
+            </button>
+          </article>
+      
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+          <!-- Logo à gauche -->
+          <div class="flex items-center gap-3">
+            <div class="size-10 grid place-items-center rounded-lg bg-gradient-to-br from-violet-500 to-amber-500">
+              🎵
+            </div>
+            <span class="font-bold text-lg">Mos Eisley Cantina</span>
+          </div>
+      
+          <!-- Navigation (cachée sur mobile) -->
+          <div class="hidden md:flex gap-8">
+            <a href="#features" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Caractéristiques
+            </a>
+            <a href="#menu" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Menu
+            </a>
+            <a href="#music" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Musique en direct
+            </a>
+            <a href="#signin" class="hover:text-violet-400 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+              Connexion
+            </a>
+          </div>
+      
+          <!-- Bouton CTA à droite -->
+          <button class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-2 rounded-lg font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400">
+            Réserver une loge
+          </button>
+        </div>
       </nav>
     </header>
     <!-- class="bg-gradient-to-br from-slate-950 via-violet-950/40 to-amber-950/30" -->
